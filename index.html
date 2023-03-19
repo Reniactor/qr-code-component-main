@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #d5e1ef;
+      height: 100svh;
+    }
+    .content-wrapper {
+      width: 410px;
+      height: 635px;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 15px; 
+      box-shadow: 1px 14px 11px 5px rgba(0,0,0,0.14);
+-webkit-box-shadow: 1px 14px 11px 5px rgba(0,0,0,0.14);
+-moz-box-shadow: 1px 14px 11px 5px rgba(0,0,0,0.14);
+    }
+    .attribution {
+      font-size: 11px; 
+      text-align: center; 
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      width: 90%;
+      font-weight: lighter;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    #qrcode {
+      height: 60%;
+      width: 90%;
+      border-radius: 15px;
+    }
+    #first-part {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #1e304e;
+    }
+    #second-part {
+      text-align: center;
+      width: 70%;
+      font-weight:lighter;
+      font-size: 1rem;
+      color: #8f8f9a;
+    }
+    .description-text {
+      width: 70%;
+      text-align: justify;
+
+      font-family: 'Varela Round', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-wrapper">
+    <img src="images/image-qr-code.png" alt="qr code" id="qrcode">
+    <h1 id="first-part"class="description-text">Improve your front-end skills by building projects</h1>
+
+    <h2 id="second-part" class="description-text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</h2>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Reniactor" target="_blank">Reniactor</a>.
+    </div>
+  </div>
+</body>
+</html>
